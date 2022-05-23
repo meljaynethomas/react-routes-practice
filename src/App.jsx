@@ -1,9 +1,19 @@
-import styles from './App.module.scss';
+import React from 'react';
+import NavBar from './components/NavBar';
+import Routes from './containers/Routes';
+
 
 const App = () => {
   return (
-    <p className={styles.para}>App Works!</p>
+    <>
+      <section>
+        <NavBar />
+      </section>
+      <section>
+        <Routes />
+      </section>
+    </>
   );
-}
+};
 
 export default App;
